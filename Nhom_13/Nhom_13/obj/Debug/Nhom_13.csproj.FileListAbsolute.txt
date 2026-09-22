@@ -1,0 +1,17 @@
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.csproj.AssemblyReference.cache
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.csproj.CoreCompileInputs.cache
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Nhom_13.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Nhom_13.pdb
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\MethodLibrary.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.csproj.Up2Date
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.dll
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.pdb
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai7.csv

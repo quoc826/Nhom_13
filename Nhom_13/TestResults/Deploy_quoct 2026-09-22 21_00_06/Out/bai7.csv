@@ -1,0 +1,4 @@
+ID,Condition,TestCaseName,s0,expected_k,expected_s
+1,valid partition,case valid partition,0,1,1
+2,valid boundary,case valid boundary 1,6,4,10
+3,valid boundary,case valid boundary 2,10,5,15
