@@ -1,0 +1,16 @@
+a,b,c,exResult,ex1,ex2,IsExceptionThrown
+0,0,0,"Vô số nghiệm",NaN,NaN,false
+0,0,5,"Vô nghiệm",NaN,NaN,false
+0,2,4,"Có 1 nghiệm",-2,-2,false
+1,2,1,"Có nghiệm kép",-1,-1,false
+1,5,6,"Có 2 nghiệm phân biệt",-2,-3,false
+1,2,3,"Vô nghiệm",NaN,NaN,false
+4.5,2,1,"",NaN,NaN,true
+"",2,1,"",NaN,NaN,true
+"abc",2,1,"",NaN,NaN,true
+1,2.1,1,"",NaN,NaN,true
+1,"",1,"",NaN,NaN,true
+1,"xyz",1,"",NaN,NaN,true
+1,2,3.1,"",NaN,NaN,true
+1,2,"","",NaN,NaN,true
+1,2,"pqr","",NaN,NaN,true

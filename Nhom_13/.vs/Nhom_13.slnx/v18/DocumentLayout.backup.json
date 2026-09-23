@@ -1,21 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\",
+  "WorkspaceRootPath": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|e:\\nhom_13\\nhom_13\\nhom_13\\nhom_13\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|E:\\Nhom_13\\Nhom_13\\Nhom_13\\nhom_13\\bai7.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai6.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai6.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai5.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai5.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\nhom_13\\bai7.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai7.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|E:\\Nhom_13\\Nhom_13\\Nhom_13\\nhom_13\\bai13.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai4.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai4.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|d:\\hoctap\\nam4\\ki\u1EC3m th\u1EED\\nhom_13\\nhom_13\\nhom_13\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\nhom_13\\bai13.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai13.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|E:\\Nhom_13\\Nhom_13\\Nhom_13\\nhom_13\\bai13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\nhom_13\\bai13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB4FA4AB-E6A0-456B-ADCD-3790A6CC61CC}|Nhom_13\\Nhom_13.csproj|solutionrelative:nhom_13\\bai13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,23 +55,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "bai06.cs",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai06.cs",
+              "RelativeDocumentMoniker": "Nhom_13\\bai06.cs",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai06.cs",
+              "RelativeToolTip": "Nhom_13\\bai06.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:50:35.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bai05.cs",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai05.cs",
+              "RelativeDocumentMoniker": "Nhom_13\\bai05.cs",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai05.cs",
+              "RelativeToolTip": "Nhom_13\\bai05.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:50:04.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bai04.cs",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai04.cs",
+              "RelativeDocumentMoniker": "Nhom_13\\bai04.cs",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai04.cs",
+              "RelativeToolTip": "Nhom_13\\bai04.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:49:36.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "bai6.csv",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai6.csv",
+              "RelativeDocumentMoniker": "Nhom_13\\bai6.csv",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai6.csv",
+              "RelativeToolTip": "Nhom_13\\bai6.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-09-23T07:48:50.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "bai5.csv",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai5.csv",
+              "RelativeDocumentMoniker": "Nhom_13\\bai5.csv",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai5.csv",
+              "RelativeToolTip": "Nhom_13\\bai5.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-09-23T07:48:40.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bai4.csv",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai4.csv",
+              "RelativeDocumentMoniker": "Nhom_13\\bai4.csv",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai4.csv",
+              "RelativeToolTip": "Nhom_13\\bai4.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-09-23T07:48:32.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "bai07.cs",
-              "DocumentMoniker": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai07.cs",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai07.cs",
               "RelativeDocumentMoniker": "Nhom_13\\bai07.cs",
-              "ToolTip": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai07.cs",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai07.cs",
               "RelativeToolTip": "Nhom_13\\bai07.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T05:21:26.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "bai13.csv",
-              "DocumentMoniker": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.csv",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.csv",
               "RelativeDocumentMoniker": "Nhom_13\\bai13.csv",
-              "ToolTip": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.csv",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.csv",
               "RelativeToolTip": "Nhom_13\\bai13.csv",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
@@ -56,23 +158,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "bai13.cs",
-              "DocumentMoniker": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.cs",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.cs",
               "RelativeDocumentMoniker": "Nhom_13\\bai13.cs",
-              "ToolTip": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.cs",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai13.cs",
               "RelativeToolTip": "Nhom_13\\bai13.cs",
               "ViewState": "AgIAACQAAAAAAAAAAADwvzwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T03:19:29.669Z"
+              "WhenOpened": "2026-09-23T03:19:29.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "bai7.csv",
-              "DocumentMoniker": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai7.csv",
+              "DocumentMoniker": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai7.csv",
               "RelativeDocumentMoniker": "Nhom_13\\bai7.csv",
-              "ToolTip": "E:\\Nhom_13\\Nhom_13\\Nhom_13\\Nhom_13\\bai7.csv",
+              "ToolTip": "D:\\HocTap\\Nam4\\Ki\u1EC3m Th\u1EED\\Nhom_13\\Nhom_13\\Nhom_13\\bai7.csv",
               "RelativeToolTip": "Nhom_13\\bai7.csv",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
