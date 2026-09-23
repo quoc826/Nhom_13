@@ -1,4 +1,4 @@
-﻿Input,Expected
+﻿Input,ExpectedResult
 7,TRUE
 6,FALSE
 -5,Exception

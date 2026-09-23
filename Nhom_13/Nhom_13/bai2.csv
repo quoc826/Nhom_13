@@ -1,4 +1,4 @@
-﻿Input,Expected
+﻿Input,ExpectedResult
 2000,TRUE
 2024,TRUE
 1900,FALSE
