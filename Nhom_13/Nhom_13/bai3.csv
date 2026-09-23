@@ -1,0 +1,4 @@
+﻿Input,Expected
+10110,22
+10201,FormatException
+,FormatException

@@ -1,0 +1,10 @@
+﻿Input,Expected
+2000,TRUE
+2024,TRUE
+1900,FALSE
+2023,FALSE
+1500,Exception
+abc,Exception
+,Exception
+1582,FALSE
+1581,Exception

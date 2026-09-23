@@ -1,0 +1,11 @@
+﻿Input,Expected
+7,TRUE
+6,FALSE
+-5,Exception
+2000,Exception
+4.5,Exception
+,Exception
+0,FALSE
+1000,FALSE
+-1,Exception
+1001,Exception
