@@ -1,0 +1,16 @@
+ID,Condition,TestCaseName,A,B,C,ExpectedResult
+1,valid partition,case valid partition,7,18,12,18
+2,invalid partition,case invalid partition 1,-8,6,9,IndexOutOfRangeException
+3,invalid partition,case invalid partition 2,63,7,11,IndexOutOfRangeException
+4,invalid partition,case invalid partition 3,8,-6,15,IndexOutOfRangeException
+5,invalid partition,case invalid partition 4,14,72,5,IndexOutOfRangeException
+6,invalid partition,case invalid partition 5,9,16,-12,IndexOutOfRangeException
+7,invalid partition,case invalid partition 6,13,4,58,IndexOutOfRangeException
+8,valid boundary,case valid boundary 1,1,24,17,24
+9,valid boundary,case valid boundary 2,36,50,22,50
+10,invalid boundary,case invalid boundary 1,0,14,20,IndexOutOfRangeException
+11,invalid boundary,case invalid boundary 2,51,8,19,IndexOutOfRangeException
+12,invalid boundary,case invalid boundary 3,15,0,27,IndexOutOfRangeException
+13,invalid boundary,case invalid boundary 4,18,51,9,IndexOutOfRangeException
+14,invalid boundary,case invalid boundary 5,21,13,0,IndexOutOfRangeException
+15,invalid boundary,case invalid boundary 6,16,12,51,IndexOutOfRangeException

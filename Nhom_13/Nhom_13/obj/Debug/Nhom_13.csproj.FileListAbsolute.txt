@@ -15,3 +15,4 @@ E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.csproj.Up2Date
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.dll
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.pdb
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai7.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai13.csv
