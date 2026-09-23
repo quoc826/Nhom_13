@@ -1,0 +1,6 @@
+ID,s1,s2,s3,expected_result
+1,,,,
+2,Le Minh Phuc,Minh,Van,Le Van Phuc
+3,Le Minh Phuc,ha,Van,Le Minh Phuc
+4,Le Minh Phuc,Le,Tran,Tran Minh Phuc
+5,Le Minh Phuc,Phuc,Phuong,Le Minh Phuong

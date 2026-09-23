@@ -45,3 +45,5 @@ E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai3.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai10.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai11.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai12.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai8.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai9.csv

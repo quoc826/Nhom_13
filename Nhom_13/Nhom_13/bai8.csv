@@ -1,0 +1,12 @@
+id,s,n,p,expected
+1,abcdef,2,1,adef
+2,abcdef,-2,2,abcdef
+3,abcdef,10,2,ab
+4,abcdef,2,-5,abcdef
+5,abcdef,2,10,abcdef
+6,abcdef,0,0,abcdef
+7,abcdef,2,4,abcd
+8,abcdef,-1,1,abcdef
+9,abcdef,6,1,a
+10,abcdef,2,-1,abcdef
+11,abcdef,2,5,abcde
