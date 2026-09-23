@@ -36,3 +36,12 @@ D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.dll
 D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\obj\Debug\Nhom_13.pdb
 D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai5.csv
 D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai6.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai4.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai5.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai6.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai1.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai2.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai3.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai10.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai11.csv
+E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai12.csv
