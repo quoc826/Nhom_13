@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Linq;
 
 namespace Nhom_13
 {
@@ -20,27 +19,26 @@ namespace Nhom_13
         [TestMethod]
         public void TestBinToDec_DataDriven()
         {
-            string sbin = TestContext.DataRow[0]?.ToString();
+            string input = TestContext.DataRow[0]?.ToString();
             string expected = TestContext.DataRow[1]?.ToString()?.Trim();
 
             if (string.Equals(expected, "FormatException", StringComparison.OrdinalIgnoreCase))
             {
-                Assert.ThrowsException<FormatException>(() =>
+                Assert.ThrowsException<Exception>(() =>
                 {
-                    if (string.IsNullOrEmpty(sbin) || !sbin.All(c => c == '0' || c == '1'))
-                    {
-                        throw new FormatException("Chuỗi đầu vào không phải là số nhị phân hợp lệ.");
-                    }
-
-                    m.BinToDec(sbin);
+                    m.BinToDec(input);
                 });
             }
             else
             {
                 long expectedVal = long.Parse(expected);
-                long actualVal = m.BinToDec(sbin);
+                long actualVal = m.BinToDec(input);
 
-                Assert.AreEqual(expectedVal, actualVal, $"Test case thất bại tại sbin = {sbin}");
+                Assert.AreEqual(
+                    expectedVal,
+                    actualVal,
+                    $"Test case thất bại tại input = {input}"
+                );
             }
         }
     }

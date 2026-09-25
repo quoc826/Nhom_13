@@ -31,10 +31,6 @@ namespace Nhom_13
                     {
                         throw new Exception("Input không phải số nguyên.");
                     }
-                    if (year < 1582)
-                    {
-                        throw new Exception("Năm nhỏ hơn 1582.");
-                    }
                     m.IsLeapYear(year);
                 });
             }
