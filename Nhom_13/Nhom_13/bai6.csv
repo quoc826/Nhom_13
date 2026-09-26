@@ -1,31 +1,31 @@
-Condition,TC_ID,TC_Name,Socu,Somoi,ExpectedBill,IsErrorState
-Valid partition,#01,Tiêu thụ trong bậc 1 (30 kWh),10,40,48972,False
-Valid partition,#02,Tiêu thụ trong bậc 2 (80 kWh),20,100,132209,False
-Valid partition,#03,Tiêu thụ trong bậc 3 (150 kWh),50,200,264165,False
-Valid partition,#04,Tiêu thụ trong bậc 4 (250 kWh),100,350,485705,False
-Valid partition,#05,Tiêu thụ trong bậc 5 (350 kWh),200,550,746680,False
-Valid partition,#06,Tiêu thụ bậc 6 (450 kWh),100,550,1026630,False
-Valid boundary,#07,Tiêu thụ = 0 kWh,100,100,0,False
-Valid boundary,#08,Cuối bậc 1 (50 kWh),0,50,81620,False
-Valid boundary,#09,Đầu bậc 2 (51 kWh),0,51,83306.3,False
-Valid boundary,#10,Cuối bậc 2 (100 kWh),0,100,165935,False
-Valid boundary,#11,Đầu bậc 3 (101 kWh),0,101,167899.6,False
-Valid boundary,#12,Cuối bậc 3 (200 kWh),0,200,362395,False
-Valid boundary,#13,Đầu bậc 4 (201 kWh),0,201,364861.2,False
-Valid boundary,#14,Cuối bậc 4 (300 kWh),0,300,609015,False
-Valid boundary,#15,Đầu bậc 5 (301 kWh),0,301,611768.3,False
-Valid boundary,#16,Cuối bậc 5 (400 kWh),0,400,884345,False
-Valid boundary,#17,Đầu bậc 6 (401 kWh),0,401,887190.7,False
-Invalid partition,#18,Chỉ số cũ âm,-5,50,-1,False
-Invalid partition,#19,Chỉ số âm (chiSoCu < 0),-5,50,-1,False
-Invalid partition,#20,Chỉ số mới âm,10,-5,-1,False
-Invalid partition,#21,Chỉ số mới < chỉ số cũ,100,50,-1,False
-Invalid partition,#22,Chỉ số cũ không phải số nguyên,INVALID,50,-1,True
-Invalid partition,#23,Chỉ số mới không phải số nguyên,10,INVALID,-1,True
-Invalid partition,#24,Chỉ số cũ là chuỗi,abc,50,-1,True
-Invalid partition,#25,Chỉ số mới là chuỗi,10,xyz,-1,True
-Invalid partition,#26,Chỉ số cũ null,,50,-1,True
-Invalid partition,#27,Chỉ số mới null,10,,-1,True
-Invalid boundary,#28,Chỉ số cũ = -1,-1,50,-1,False
-Invalid boundary,#29,Chỉ số mới = -1,10,-1,-1,False
-Invalid boundary,#30,Tiêu thụ = -1 kWh,50,49,-1,False
+chiSoCu,chiSoMoi,Expected
+10,40,48972
+20,100,132209
+50,200,264165
+100,350,485705
+200,550,746680
+100,550,1026630
+100,100,0
+0,50,81620
+0,51,83306.3
+0,100,165935
+0,101,167899.6
+0,200,362395
+0,201,364861.2
+0,300,609015
+0,301,611768.3
+0,400,884345
+0,401,887190.7
+-5,50,-1
+-5,50,-1
+10,-5,-1
+100,50,-1
+10.5,50,Exception
+10,50.5,Exception
+abc,50,Exception
+10,xyz,Exception
+null,50,Exception
+10,null,Exception
+-1,50,-1
+10,-1,-1
+50,49,-1

@@ -47,3 +47,11 @@ E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai11.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai12.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai8.csv
 E:\Nhom_13\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai9.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai10.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai11.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai12.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai8.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai9.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai1.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai2.csv
+D:\HocTap\Nam4\Kiểm Thử\Nhom_13\Nhom_13\Nhom_13\bin\Debug\bai3.csv

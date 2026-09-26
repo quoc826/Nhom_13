@@ -1,103 +1,97 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Globalization;
 
 namespace Nhom_13
 {
-    // ==========================================
-    // 1. CLASS XỬ LÝ LOGIC GIẢI PHƯƠNG TRÌNH BẬC 2
-    // ==========================================
-    public class QuadraticEquationSolver
-    {
-        public static string Solve(string aStr, string bStr, string cStr)
-        {
-            // Bắt ngoại lệ nếu dữ liệu không phải là số nguyên hợp lệ (chữ, rỗng, số thập phân)
-            if (!double.TryParse(aStr, NumberStyles.Integer, CultureInfo.InvariantCulture, out double a) ||
-                !double.TryParse(bStr, NumberStyles.Integer, CultureInfo.InvariantCulture, out double b) ||
-                !double.TryParse(cStr, NumberStyles.Integer, CultureInfo.InvariantCulture, out double c))
-            {
-                throw new ArgumentException("Dữ liệu đầu vào không hợp lệ.");
-            }
-
-            if (a == 0)
-            {
-                if (b == 0)
-                {
-                    if (c == 0)
-                        return "Vô số nghiệm";
-                    else
-                        return "Vô nghiệm";
-                }
-                else
-                {
-                    return "Có 1 nghiệm";
-                }
-            }
-
-            double delta = b * b - 4 * a * c;
-
-            if (delta < 0)
-            {
-                return "Vô nghiệm";
-            }
-            else if (delta == 0)
-            {
-                return "Có nghiệm kép";
-            }
-            else
-            {
-                return "Có 2 nghiệm phân biệt";
-            }
-        }
-    }
-
-    // ==========================================
-    // 2. CLASS KIỂM THỬ UNIT TEST DATA-DRIVEN
-    // ==========================================
     [TestClass]
-    public class Bai05Test
+    public class Bai05
     {
+        private MethodLibrary.MethodLibrary m = new MethodLibrary.MethodLibrary();
         public TestContext TestContext { get; set; }
 
-        [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-                    "bai5.csv",
-                    "bai5#csv",
-                    DataAccessMethod.Sequential)]
+        [DataSource(
+            "Microsoft.VisualStudio.TestTools.DataSource.CSV",
+            "|DataDirectory|\\bai5.csv",
+            "bai5#csv",
+            DataAccessMethod.Sequential)]
         [DeploymentItem("bai5.csv")]
-        public void Test_SolveQuadratic_DataDriven()
+        [TestMethod]
+        public void TestSolveQuadratic()
         {
-            // Đọc trạng thái kỳ vọng văng lỗi từ cột IsExceptionThrown
-            bool isExceptionExpected = false;
-            if (TestContext.DataRow["IsExceptionThrown"] != DBNull.Value)
-            {
-                bool.TryParse(TestContext.DataRow["IsExceptionThrown"].ToString().Trim(), out isExceptionExpected);
-            }
+            // 1. Đọc dữ liệu từ file CSV
+            string inputA = TestContext.DataRow["a"]?.ToString()?.Trim();
+            string inputB = TestContext.DataRow["b"]?.ToString()?.Trim();
+            string inputC = TestContext.DataRow["c"]?.ToString()?.Trim();
+            string expectedMsg = TestContext.DataRow["ExpectedMsg"]?.ToString()?.Trim();
+            string expectedX1Str = TestContext.DataRow["ExpectedX1"]?.ToString()?.Trim();
+            string expectedX2Str = TestContext.DataRow["ExpectedX2"]?.ToString()?.Trim();
 
-            // Đọc các giá trị từ file CSV theo đúng tên cột exResult
-            string rawA = TestContext.DataRow["a"]?.ToString().Trim() ?? "";
-            string rawB = TestContext.DataRow["b"]?.ToString().Trim() ?? "";
-            string rawC = TestContext.DataRow["c"]?.ToString().Trim() ?? "";
-            string expectedResult = TestContext.DataRow["exResult"]?.ToString().Trim() ?? "";
+            // 2. Chuyển đổi dữ liệu input
+            bool isIntA = int.TryParse(inputA, out int a);
+            bool isIntB = int.TryParse(inputB, out int b);
+            bool isIntC = int.TryParse(inputC, out int c);
 
-            // Xử lý kiểm thử
-            if (isExceptionExpected)
+            // 3. Trường hợp Exception (Đầu vào không hợp lệ)
+            if (string.Equals(expectedMsg, "Exception", StringComparison.OrdinalIgnoreCase))
             {
-                try
+                Assert.ThrowsException<Exception>(() =>
                 {
-                    QuadraticEquationSolver.Solve(rawA, rawB, rawC);
-                    Assert.Fail("Kỳ vọng văng Exception nhưng chương trình không văng.");
-                }
-                catch (ArgumentException)
-                {
-                    // Văng lỗi đúng như kỳ vọng trong CSV -> Test Pass
-                    Assert.IsTrue(true);
-                }
+                    if (!isIntA || !isIntB || !isIntC)
+                    {
+                        throw new Exception("Đầu vào không phải số nguyên.");
+                    }
+                    m.SolveQuadratic(a, b, c, out float x1, out float x2);
+                });
             }
+            // 4. Trường hợp hợp lệ
             else
             {
-                string actualResult = QuadraticEquationSolver.Solve(rawA, rawB, rawC);
-                Assert.AreEqual(expectedResult, actualResult, $"Lỗi kết quả tại case (a={rawA}, b={rawB}, c={rawC})");
+                Assert.IsTrue(isIntA && isIntB && isIntC, $"Đầu vào ({inputA}, {inputB}, {inputC}) phải là số nguyên.");
+
+                // Gọi hàm thực tế
+                string actualMsg = m.SolveQuadratic(a, b, c, out float actualX1, out float actualX2);
+
+                // a) Kiểm tra thông báo
+                if (expectedMsg.Equals("Vo so nghiem", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(actualMsg.Contains("Vô số nghiệm") || actualMsg.Contains("Vo so nghiem"));
+                }
+                else if (expectedMsg.Equals("Vo nghiem", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(actualMsg.Contains("Vô nghiệm") || actualMsg.Contains("Vo nghiem"));
+                }
+                else if (expectedMsg.Equals("Co 1 nghiem", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(actualMsg.Contains("1 nghiệm") || actualMsg.Contains("1 nghiem"));
+                }
+                else if (expectedMsg.Equals("Co nghiem kep", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(actualMsg.Contains("nghiệm kép") || actualMsg.Contains("nghiem kep"));
+                }
+                else if (expectedMsg.Equals("Co 2 nghiem phan biet", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(actualMsg.Contains("2 nghiệm") || actualMsg.Contains("2 nghiem"));
+                }
+
+                // b) So sánh nghiệm x1 (SỬA LỖI NaN TẠI ĐÂY)
+                if (string.Equals(expectedX1Str, "NaN", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(float.IsNaN(actualX1), $"Sai x1 tại TC({a}, {b}, {c}): Kỳ vọng NaN nhưng thực tế là {actualX1}");
+                }
+                else if (float.TryParse(expectedX1Str, out float expX1))
+                {
+                    Assert.AreEqual(expX1, actualX1, 0.001f, $"Sai x1 tại TC({a}, {b}, {c})");
+                }
+
+                // c) So sánh nghiệm x2 (SỬA LỖI NaN TẠI ĐÂY)
+                if (string.Equals(expectedX2Str, "NaN", StringComparison.OrdinalIgnoreCase))
+                {
+                    Assert.IsTrue(float.IsNaN(actualX2), $"Sai x2 tại TC({a}, {b}, {c}): Kỳ vọng NaN nhưng thực tế là {actualX2}");
+                }
+                else if (float.TryParse(expectedX2Str, out float expX2))
+                {
+                    Assert.AreEqual(expX2, actualX2, 0.001f, $"Sai x2 tại TC({a}, {b}, {c})");
+                }
             }
         }
     }

@@ -1,121 +1,59 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Globalization;
 
 namespace Nhom_13
 {
-    // ==========================================
-    // 1. CLASS XỬ LÝ LOGIC TÍNH TIỀN ĐIỆN SINH HOẠT
-    // ==========================================
-    public class PowerBillCalculator
-    {
-        // Bảng giá điện đã bao gồm thuế/điều chỉnh chuẩn theo file dữ liệu CSV đề bài
-        // Bậc 1: 0 - 50 kWh
-        // Bậc 2: 51 - 100 kWh
-        // Bậc 3: 101 - 200 kWh
-        // Bậc 4: 201 - 300 kWh
-        // Bậc 5: 301 - 400 kWh
-        // Bậc 6: trên 400 kWh
-        private static readonly double[] TIER_LIMITS = { 50, 50, 100, 100, 100 };
-        private static readonly double[] TIER_PRICES = { 1678, 1734, 2014, 2536, 2834, 2927 };
-        private const double VAT_RATE = 0.10;
-
-        public static double CalculateBill(int socu, int somoi)
-        {
-            // Trả về -1 cho các trường hợp chỉ số âm hoặc chỉ số mới < chỉ số cũ
-            if (socu < 0 || somoi < 0 || somoi < socu)
-            {
-                return -1;
-            }
-
-            int kwh = somoi - socu;
-            if (kwh == 0) return 0;
-
-            double totalBeforeTax = 0;
-            int remainingKwh = kwh;
-
-            for (int i = 0; i < TIER_LIMITS.Length; i++)
-            {
-                if (remainingKwh <= 0) break;
-
-                double kwhInTier = Math.Min(remainingKwh, TIER_LIMITS[i]);
-                totalBeforeTax += kwhInTier * TIER_PRICES[i];
-                remainingKwh -= (int)kwhInTier;
-            }
-
-            if (remainingKwh > 0)
-            {
-                totalBeforeTax += remainingKwh * TIER_PRICES[5];
-            }
-
-            // Tính thuế VAT 10% va làm tròn
-            double totalWithTax = totalBeforeTax * (1 + VAT_RATE);
-            return Math.Round(totalWithTax, 1);
-        }
-    }
-
-    // ==========================================
-    // 2. CLASS KIỂM THỬ UNIT TEST DATA-DRIVEN
-    // ==========================================
     [TestClass]
-    public class Bai06Test
+    public class Bai06
     {
+        private MethodLibrary.MethodLibrary m = new MethodLibrary.MethodLibrary();
         public TestContext TestContext { get; set; }
 
-        [TestMethod]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-                    "bai6.csv",
-                    "bai6#csv",
-                    DataAccessMethod.Sequential)]
+        [DataSource(
+            "Microsoft.VisualStudio.TestTools.DataSource.CSV",
+            "|DataDirectory|\\bai6.csv",
+            "bai6#csv",
+            DataAccessMethod.Sequential)]
         [DeploymentItem("bai6.csv")]
-        public void Test_CalculateBill_DataDriven()
+        [TestMethod]
+        public void TestTinhTien()
         {
-            string tcID = TestContext.DataRow["TC_ID"]?.ToString().Trim() ?? "";
+            // 1. Đọc dữ liệu từ file CSV
+            string inputCu = TestContext.DataRow["chiSoCu"]?.ToString()?.Trim();
+            string inputMoi = TestContext.DataRow["chiSoMoi"]?.ToString()?.Trim();
+            string expectedStr = TestContext.DataRow["Expected"]?.ToString()?.Trim();
 
-            bool isErrorState = false;
-            if (TestContext.DataRow["IsErrorState"] != DBNull.Value)
+            // 2. Chuyển đổi dữ liệu input
+            bool isIntCu = int.TryParse(inputCu, out int chiSoCu);
+            bool isIntMoi = int.TryParse(inputMoi, out int chiSoMoi);
+
+            // 3. TRƯỜNG HỢP KỲ VỌNG EXCEPTION (Data Row 21 -> 26)
+            if (string.Equals(expectedStr, "Exception", StringComparison.OrdinalIgnoreCase) || !isIntCu || !isIntMoi)
             {
-                bool.TryParse(TestContext.DataRow["IsErrorState"].ToString().Trim(), out isErrorState);
+                Assert.ThrowsException<Exception>(() =>
+                {
+                    // Nếu dữ liệu CSV là số thực (10.5), chữ (abc) hoặc null -> ném Exception ngay
+                    if (!isIntCu || !isIntMoi)
+                    {
+                        throw new Exception("Đầu vào không phải là số nguyên.");
+                    }
+
+                    // Gọi hàm trong DLL
+                    m.TinhTienDien(chiSoCu, chiSoMoi);
+                });
             }
-
-            string rawSocu = TestContext.DataRow["Socu"]?.ToString().Trim() ?? "";
-            string rawSomoi = TestContext.DataRow["Somoi"]?.ToString().Trim() ?? "";
-
-            // Trường hợp dữ liệu bất hợp lệ (chứa chữ / null / INVALID)
-            if (isErrorState)
-            {
-                bool parseOldSuccess = int.TryParse(rawSocu, out int socu);
-                bool parseNewSuccess = int.TryParse(rawSomoi, out int somoi);
-
-                if (!parseOldSuccess || !parseNewSuccess)
-                {
-                    Assert.IsTrue(true);
-                    return;
-                }
-
-                try
-                {
-                    PowerBillCalculator.CalculateBill(socu, somoi);
-                    Assert.Fail($"Test Case {tcID}: Kỳ vọng báo lỗi nhưng chương trình không văng ngoại lệ.");
-                }
-                catch (Exception)
-                {
-                    Assert.IsTrue(true);
-                }
-            }
-            // Trường hợp tính toán tiền điện
+            // 4. TRƯỜNG HỢP TÍNH TIỀN HOẶC TRẢ VỀ -1 (Data Row 0 -> 20, 27 -> 29)
             else
             {
-                int socu = int.Parse(rawSocu);
-                int somoi = int.Parse(rawSomoi);
+                // Gọi hàm DLL
+                object res = m.TinhTienDien(chiSoCu, chiSoMoi);
+                double actual = Convert.ToDouble(res);
 
-                string rawExpected = TestContext.DataRow["ExpectedBill"]?.ToString().Trim() ?? "0";
-                double expectedBill = double.Parse(rawExpected, CultureInfo.InvariantCulture);
+                // Chuyển giá trị kỳ vọng sang double
+                double expected = Convert.ToDouble(expectedStr);
 
-                double actualBill = PowerBillCalculator.CalculateBill(socu, somoi);
-
-                // Tăng nhẹ dung sai lên 5.0 để chấp nhận các chênh lệch do công thức làm tròn lẻ của Excel
-                Assert.AreEqual(expectedBill, actualBill, 5.0, $"Lỗi kết quả tại {tcID} (Cũ: {socu}, Mới: {somoi})");
+                // So sánh kết quả
+                Assert.AreEqual(expected, actual, 1.0, $"Sai kết quả tại TC({chiSoCu}, {chiSoMoi}): Kỳ vọng {expected} nhưng thực tế là {actual}");
             }
         }
     }
